@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+svg {
+  background: black;
+}
+
+svg circle {
+  stroke: #15F4EE;
+  stroke-width: 2;
+  fill: url(#gradient);
+  z-index: 5;
+  cursor: pointer;
+}
+
+#score {
+  font-size: 2rem;
+}
+
+.start-text {
+  fill: white;
+  font-size: 8rem;
+  opacity: 0;
+  transform-origin: center;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play {
+  color: #15F4EE;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid #15F4EE;
+  border-radius: 100px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  padding: 10px 50px;
+}
+
+#play:hover {
+  box-shadow: 0 5px 20px 0 #15F4EE inset,
+              0 5px 20px 0 #15F4EE,
+              0 5px 20px 0 #15F4EE inset,
+              0 5px 20px 0 #15F4EE;
+  cursor: pointer;
+}
+
+#game-over {
+  color: #15F4EE;
+  text-transform: uppercase;
+  font-size: 6rem;
+  display: none;
+}
+
+#game-over .letter {
+  display: inline-block;
+}
